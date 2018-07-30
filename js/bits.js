@@ -1,21 +1,51 @@
 $(window).ready(function(){
 
   // Scroll position. Change to control when to change background to blue
-  var windowHeight = window.innerHeight;
+  var windowHeight = 1000;
   var midHeight = windowHeight * 1.6;
   var twiceHeight = windowHeight * 2;
 
   $(function() {
      $(window).scroll(function () {
-        if ($(document).scrollTop() > midHeight) {
+        if ($(document).scrollTop() > 2000) {
            $('.scrollbg')
            .removeClass('removeColor')
            .addClass('changeColor')
         }
-        if ($(document).scrollTop() < midHeight) {
+        if ($(document).scrollTop() < 2000) {
            $('.scrollbg')
            .removeClass('changeColor')
            .addClass('removeColor')
+        }
+     });
+  });
+
+  $(function() {
+     $(window).scroll(function () {
+        if ($(document).scrollTop() > 2000) {
+           $('.herobg')
+           .removeClass('fadeInScroll')
+           .addClass('fadeOutScroll')
+        }
+        if ($(document).scrollTop() < 2000) {
+           $('.herobg')
+           .removeClass('fadeOutScroll')
+           .addClass('fadeInScroll')
+        }
+     });
+  });
+
+  $(function() {
+     $(window).scroll(function () {
+        if ($(document).scrollTop() > 2120) {
+           $('.contactsection')
+           .removeClass('fadeOutScroll')
+           .addClass('fadeInScroll')
+        }
+        if ($(document).scrollTop() < 2120) {
+           $('.contactsection')
+           .removeClass('fadeInScroll')
+           .addClass('fadeOutScroll')
         }
      });
   });
@@ -50,7 +80,7 @@ $(window).ready(function(){
     var controller = new ScrollMagic.Controller();
     var containerScene = new ScrollMagic.Scene({
         triggerElement: '#pausetrigger',
-        duration: windowHeight*0.8,
+        duration: windowHeight*0.75,
         triggerHook: 0.5,
         gap: 0,
         reverse: true

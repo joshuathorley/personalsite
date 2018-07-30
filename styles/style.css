@@ -25,6 +25,41 @@
   font-weight: 600;
 }
 
+/*Animations*/
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
 /*CSS Reset*/
 
 html, body, div, span, applet, object, iframe,
@@ -82,7 +117,7 @@ body {
 
 }
 
-#content {
+.content {
   position: relative;
   z-index: 999;
   width: 1020px;
@@ -90,17 +125,23 @@ body {
 }
 
 .hundred {
-  height: 100vh;
-  margin-top: 240px;
+  height: 1000px;
+  margin-top: 120px;
 }
 
-.hundred:first-of-type {
+.hundredone {
   margin-top: 0;
 }
 
-/* contact me */
-.hundred:nth-child(3){
-  box-sizing: border-box;
+.hundredtwo .content,
+.hundredthree .content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-56%);
+}
+
+.hundredthree .content {
+  transform: translateY(-62%);
 }
 
 /* Change fade in speed for background change here */
@@ -275,7 +316,7 @@ p + p {
   color: #ffffff;
 }
 
-.contentcopy {
+.contactcopy {
   margin-left: 40px;
 }
 
@@ -336,4 +377,21 @@ p + p {
 
 .testclasslol {
   background: red!important;
+}
+
+.fadeOutScroll {
+  opacity: 0;
+  transition: 1s;
+}
+
+.fadeInScroll {
+  opacity: 1;
+  transition: 2s;
+}
+
+.hundredthree {
+  overflow: hidden;
+  margin-top: 600px;
+  height: 100vh;
+  max-height: 1000px;
 }

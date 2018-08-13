@@ -55,13 +55,31 @@ $(window).ready(function(){
        function(){ $(this).addClass('focusme') }
   )
 
+  $('.projectlink.one').hover(
+       function(){ $('.projectimgone').addClass('appear') }
+  )
+
   $('.projectlink.two').hover(
-       function(){ $('#greycircle').addClass('testclasslol') }
+       function(){ $('.projectimgone').removeClass('appear') }
   )
 
   $('.projectlink.three').hover(
-       function(){ $('#greycircle').removeClass('testclasslol') }
+       function(){ $('.projectimgone').removeClass('appear') }
   )
+
+  $(function() {
+     $(window).scroll(function () {
+        if ($(document).scrollTop() < 1000) {
+           $('.featuredimgs')
+           .addClass('disappear')
+        }
+        if ($(document).scrollTop() > 1000) {
+           $('.featuredimgs')
+           .removeClass('disappear')
+           .addClass('reappear')
+        }
+     });
+  });
 
 
   $(function () {

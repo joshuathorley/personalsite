@@ -16,14 +16,8 @@
   /* Safari, Android, iOS */
   font-weight: 500;
 }
-@font-face {
-  font-family: "larsseit";
-  src: url("../fonts/larsseit-bold.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/larsseit-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/larsseit-bold.woff") format("woff"), url("../fonts/larsseit-bold.ttf") format("truetype");
-  /* Safari, Android, iOS */
-  font-weight: 600;
-}
+@font-face {font-family: 'larsseit';src: url('../fonts/374C50_0_0.eot');src: url('../fonts/374C50_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/374C50_0_0.woff2') format('woff2'),url('../fonts/374C50_0_0.woff') format('woff'),url('../fonts/374C50_0_0.ttf') format('truetype'); font-weight: 600;}
+
 
 /*Animations*/
 

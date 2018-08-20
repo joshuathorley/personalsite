@@ -69,11 +69,11 @@ $(window).ready(function(){
 
   $(function() {
      $(window).scroll(function () {
-        if ($(document).scrollTop() < 1000) {
+        if ($(document).scrollTop() < 900) {
            $('.featuredimgs')
            .addClass('disappear')
         }
-        if ($(document).scrollTop() > 1000) {
+        if ($(document).scrollTop() > 900) {
            $('.featuredimgs')
            .removeClass('disappear')
            .addClass('reappear')

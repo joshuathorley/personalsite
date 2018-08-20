@@ -119,7 +119,7 @@ body {
 
 .content {
   position: relative;
-  z-index: 999;
+  z-index: 0;
   width: 1020px;
   margin: 0 auto;
 }
@@ -238,8 +238,8 @@ p + p {
 #hero {
   margin: 160px 0 0 40px;
   width: 840px;
-  position:relative;
-  z-index: 999;
+  position: relative;
+  z-index: 2;
 }
 
 #scratch {
@@ -261,6 +261,7 @@ p + p {
   border-radius: 50%;
   border: 0;
   margin: 456px 0 0 340px;
+  position:relative;
   z-index: 0;
 }
 
@@ -287,6 +288,9 @@ p + p {
 
 #projectlinks {
   margin-top: 80px;
+  position: relative;
+  z-index: 1;
+  width: max-content;
 }
 
 #projectlinks h1 + h1,
@@ -378,10 +382,6 @@ p + p {
   transition: 2s all;
 }
 
-.testclasslol {
-  background: red!important;
-}
-
 .fadeOutScroll {
   opacity: 0;
   transition: 1s;
@@ -422,5 +422,10 @@ p + p {
 
 .disappear {
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.2s;
+}
+
+.projectimglink {
+  width: 800px;
+  height: 800px;
 }

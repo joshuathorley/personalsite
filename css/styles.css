@@ -116,7 +116,7 @@ header p:first-of-type {
 }
 
 .btn:hover {
-  margin-top: -4px;
+  margin: -4px 0 4px;
   background: rgba(255,255,255,0.12);
 }
 

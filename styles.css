@@ -157,7 +157,7 @@ footer .content {
 }
 
 .linkhighlight img {
-  margin: 12px 0 0 2px;
+  margin: 8px 0 0 2px;
 }
 
 .linkhighlight:hover:after {
@@ -174,7 +174,7 @@ footer .content {
 }
 
 #socials p img {
-  margin: 8px 0 0 4px;
+  margin: 6px 0 0 4px;
   filter: invert(1);
   opacity: 0.8;
   visibility: hidden;

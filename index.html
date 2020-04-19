@@ -1,39 +1,52 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
+    <title>Joshua Thorley</title>
+    <meta name="description" content="Joshua Thorley is a product designer from the UK. He helps people build great digital products, attract more customers and make more money.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="tooltip.js"></script>
+  </head>
 
-  <title>Joshua Thorley</title>
-  <meta name="description" content="Joshua Thorley is a product designer from the UK. He helps organisations build great products, attract more customers and make more money.">
+  <body>
+    <section class="content hero">
+      <h1>Hey, I’m Joshua Thorley, a product designer working remotely from Cardiff, UK</h1>
+      <p>I help people build better products, attract customers, and make more money</p>
+      <p>I’m currently helping make live events better at <span class="linkhighlight"><a href="https://seatgeek.com">Seatgeek<img src="linkicon.svg"></a></span></p>
+    </section>
 
-  <link rel="stylesheet" href="css/styles.css">
-
-</head>
-
-<body>
-  <div id="center">
-
-  <header>
-    <p><strong>Joshua Thorley</strong></p>
-    <p>- Currently at Seatgeek</p>
-  </header>
-
-  <section>
-    <div id="strikeout"></div>
-    <h1>I'm a Product Designer</h1>
-    <p>I help people build better products, attract customers, and make more money.</p>
-    <p>I’m in the process of designing and building my new portfolio, having given myself until 2019 to complete it. In the meantime, you can see some of my work <a href="https://dribbble.com/joshuathorley" target="_blank">here</a>.</p>
-  </section>
-
-  <footer>
-    <a href="mailto:hello@joshuathorley.com">
-    <div class="btn">
-      <p>👋</p><p>Contact me</p>
-    </div>
+    <a href="mailto:hello@joshuathorley.com" target="_blank" data-tooltip="Contact me" id="contactme">
+      <img src="contacticon.svg">
     </a>
-  </footer>
 
-  </div>
-</body>
+    <footer>
+      <section class="content">
+        <div id="history">
+          <h4>Previously at</h4>
+          <p>Rebilla</p>
+          <p>3drops</p>
+          <p>JP Morgan</p>
+        </div>
+        <div id="socials">
+          <h4>Find me on</h4>
+          <p><a href="https://dribbble.com/joshuathorley">Dribbble<img src="linkicon.svg"></a></p>
+          <p><a href="https://dribbble.com/joshuathorley">Twitter<img src="linkicon.svg"></a></p>
+          <p><a href="https://instagram.com/joshthorley">Instagram<img src="linkicon.svg"></a></p>
+        </div>
+      </section>
+    </footer>
+
+<script type="text/javascript">
+  var tooltipSpan = document.getElementById('tooltip-span');
+
+  window.onmousemove = function (e) {
+      var x = e.clientX,
+          y = e.clientY;
+      tooltipSpan.style.top = (y + 20) + 'px';
+      tooltipSpan.style.left = (x + 20) + 'px';
+  };
+</script>
+
+  </body>
 </html>

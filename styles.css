@@ -37,7 +37,7 @@ body {
 
 .hero {
   font-size: 32px;
-  line-height: 48px;
+  line-height: 44px;
 }
 
 .hero p {
@@ -110,7 +110,7 @@ footer h4 {
 }
 
 body .content {
-  margin: 0 240px;
+  margin: 0 160px;
   padding: 160px 0;
   max-width: 1200px;
 }
@@ -199,10 +199,6 @@ footer .content div {
 }
 
 @media only screen and (max-width: 1102px) {
-  body .content {
-    margin: 0 160px;
-  }
-
   footer .content div {
     max-width: 252px;
   }

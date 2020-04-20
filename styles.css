@@ -106,6 +106,8 @@ footer h4 {
 }
 
 #contactme img {
+  width: 36px;
+  height: auto;
   padding: 18px;
 }
 

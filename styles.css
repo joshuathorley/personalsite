@@ -250,4 +250,15 @@ footer .content div {
     padding: 40px 0;
     margin: 0 40px;
   }
+
+  #contactme {
+    top: auto;
+    bottom: 20px;
+    right: 20px;
+    max-height: 56px;
+  }
+
+  #contactme img {
+    padding: 10px;
+  }
 }
